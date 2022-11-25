@@ -1,0 +1,58 @@
+VER 3 0000000000000022 "/use 15" "INV_MISC_QUESTIONMARK"
+/use 15
+END
+VER 3 0000000000000042 "afes" "INV_MISC_QUESTIONMARK"
+/bow
+END
+VER 3 000000000000002A "assist" "INV_MISC_QUESTIONMARK"
+/castsequence reset=5 judgment, crusader strike
+END
+VER 3 0000000000000032 "av" "INV_MISC_QUESTIONMARK"
+#showtooltip avenger's shield
+/cast avenger's shield
+/cast shield of the righteous
+END
+VER 3 0000000000000020 "avoidw" "SPELL_HOLY_BLESSINGOFPROTECTION"
+/run local b,d,p,a=GetBlockChance(),GetDodgeChance(),GetParryChance() a=(b+d+p+5)ChatFrame1:AddMessage(format("Block: %.2f%% Dodge: %.2f%% Parry: %.2f%% Avoidance: %.2f%%",b,d,p,a))
+END
+VER 3 0000000000000035 "cads" "INV_MISC_QUESTIONMARK"
+#showtooltip Divine Shield
+/cancelaura Divine Shield
+END
+VER 3 0000000000000031 "dong" "INV_MISC_QUESTIONMARK"
+/cast hammer of the righteous
+/cast shield of the righteous
+END
+VER 3 000000000000002C "Find a guild" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+/2 535 ilvl prot/ret pally looking for a guild to start raiding again.  Looking for weekdays between 6 and 10 server.  Pst with details!
+END
+VER 3 0000000000000044 "gkick 9 months" "INV_MISC_QUESTIONMARK"
+/run if not CanGuildRemove() then return end for i=1,GetNumGuildMembers() do local y,m,d=GetGuildRosterLastOnline(i) print((GetGuildRosterInfo(i)),y,m,d) if y then if y>=1 or m>8 then GuildUninvite(GetGuildRosterInfo(i)) end end end
+END
+VER 3 0000000000000045 "invite ret" "INV_Misc_QuestionMark"
+/invite rethand@sargeras
+END
+VER 3 0000000000000043 "lh" "INV_MISC_QUESTIONMARK"
+/cast light's hammer
+/click
+END
+VER 3 0000000000000040 "Loot" "ACHIEVEMENT_GUILDPERK_MOBILEBANKING"
+We will be using Master looter.  I will request rolls with the blizz pop up. Roll Need for main spec and Greed for off spec.  We will validate before awarding the loot. /loot will display the loot rolls.
+END
+VER 3 0000000000000041 "RazorbackRecruit" "INV_JEWELCRAFTING_CRIMSONBOAR"
+/1 Razorbacks Recruiting: Tuesday and Thursday 7-10 server.  Anyone is welcome though raiding spots will be more selective.
+END
+VER 3 0000000000000036 "shocking" "INV_MISC_QUESTIONMARK"
+#showtooltip holy shock
+/use 10
+/cast [modifier:alt, target=rethand][] holy shock
+END
+VER 3 000000000000002E "top trinket" "INV_MISC_QUESTIONMARK"
+/use 13
+END
+VER 3 0000000000000026 "TSMUseDestroyer" "1"
+/click TSMDestroyingButton1
+END
+VER 3 0000000000000027 "TSMUseDestroyer" "1"
+/click TSMDestroyingButton1
+END
